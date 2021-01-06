@@ -19,6 +19,8 @@ jobs:
     displayName: 'dotnet build'
   - script: ./run-tests.sh
     displayName: 'run tests'
+  - script: echo Hello World
+    displayName: 'writing helloo world...'
   - task: PublishTestResults@2
     displayName: 'Publish Test Results **/*.trx'
     condition: succeededOrFailed()
